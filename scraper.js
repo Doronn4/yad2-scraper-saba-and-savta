@@ -8,6 +8,7 @@ const getYad2Response = async (url) => {
         method: 'GET',
         redirect: 'follow'
     };
+
     try {
         const res = await fetch(url, requestOptions)
         return await res.text()
